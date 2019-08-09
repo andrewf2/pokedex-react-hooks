@@ -16,10 +16,10 @@ export const EvolutionChain = ({url}) => {
   return (
     <div>
       { chain.evolves_to.map(pokemon => {
-        if(pokemon.name){
-          return (<div key={pokemon.name}> {pokemon.name} </div>)
-        }
-      })
+          if(pokemon.name){
+            return (<div key={pokemon.name}> {pokemon.name} </div>)
+          }
+        })
       }
     </div>
   )
