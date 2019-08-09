@@ -15,9 +15,8 @@ export const Pokedex = () => {
   
   return (
     <div>
-      { entries.map(entry =>
-        <PokeEntry key={entry.entry_number} entry={entry}></PokeEntry>
-      )
+      {
+        entries.map(entry => <PokeEntry key={entry.entry_number} entry={entry}></PokeEntry>)
       }
     </div>
   )
